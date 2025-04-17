@@ -139,14 +139,11 @@ body {
     flex-direction: column;
 }
 
-/* Section Swara */
-.judul-content {
-    font-size: 24px;
-    text-decoration: underline;
-    margin-bottom: 40px;
-}
-
-.judul-aksara {
+/* Section Judul */
+.judul-aksara,
+.judul-aksara2,
+.judul-aksara3,
+.judul-content2 {
     display: inline-block;
     font-size: 24;
     text-align: center;
@@ -155,6 +152,13 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
     border-radius: 20px;
+}
+
+/* Section Swara */
+.judul-content {
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: 40px;
 }
 
 .swara-r1 {
@@ -169,15 +173,56 @@ body {
     padding: 10px 30px;
     border-radius: 13px;
     box-shadow: 0 2px 5px #1E3A5F;
-}
-
-/* Section Ngalagena */
-.judul-aksara2 {
-    font-size: 24px;
-    text-decoration: underline;
     margin-bottom: 40px;
 }
 
+/* Section Ngalagena */
+.ngalagena-r {
+    display: flex;
+    flex-direction: row;
+    gap: 49px
+}
+
+.ngalagena1 {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 13px;
+    box-shadow: 0 2px 5px #1E3A5F;
+    margin-bottom: 40px;
+}
+
+/* Section Tanda */
+.tanda-r {
+    display: flex;
+    flex-direction: row;
+    gap: 49px
+}
+
+.tanda1 {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 13px;
+    box-shadow: 0 2px 5px #1E3A5F;
+    margin-bottom: 40px;
+}
+
+/* Section Angka */
+.angka-r {
+    display: flex;
+    flex-direction: row;
+    gap: 49px;
+}
+
+.angka1 {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 13px;
+    box-shadow: 0 2px 5px #1E3A5F;
+    margin-bottom: 40px;
+}
 
 /* Footer */
 .footer {
