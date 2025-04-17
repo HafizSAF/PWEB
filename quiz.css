@@ -1,0 +1,39 @@
+body {
+    background-color: #f0f0f0; /* Warna latar belakang ringan */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white; /* Warna utama teks */
+    background: linear-gradient(to right, #1E3A5F 0%, #D4A017 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}body {
+    background-color: #f0f0f0; /* Warna latar belakang ringan */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white; /* Warna utama teks */
+    background: linear-gradient(to bottom, #1E3A5F 0%, #D4A017 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
