@@ -84,8 +84,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let isCorrect = true;
 
         // Reset warna sebelum validasi
-        pieces.forEach((piece) => {
-            piece.classList.remove("correct", "wrong");
+        targets.forEach((target) => {
+            target.classList.remove("correct", "wrong");
+            target.style.backgroundColor = ""; // Reset warna latar belakang
+            target.style.borderColor = ""; // Reset warna border
         });
 
         targets.forEach((target, index) => {
@@ -94,9 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (pieceText !== correctAnswer) {
                 isCorrect = false;
-                target.classList.add("wrong");
+                target.classList.add("wrong"); // Tandai sebagai salah
             } else {
-                target.classList.add("correct");
+                target.classList.add("correct"); // Tandai sebagai benar
             }
         });
 

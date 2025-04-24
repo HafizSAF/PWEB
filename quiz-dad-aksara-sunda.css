@@ -89,6 +89,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     gap: 10px;
+    justify-content: center;
 }
 
 .target {
@@ -103,6 +104,17 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #1E3A5F; /* Warna teks di area target */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.target.correct {
+    background-color: #4caf50; /* Hijau untuk jawaban benar */
+    border-color: #4caf50; /* Hilangkan garis putus-putus */
+}
+
+.target.wrong {
+    background-color: #f44336; /* Merah untuk jawaban salah */
+    border-color: #f44336; /* Hilangkan garis putus-putus */
 }
 
 /* Potongan Puzzle */
@@ -125,11 +137,12 @@ body {
     border-radius: 5px;
     cursor: grab;
     user-select: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .piece.dragging {
     opacity: 0.5; /* Efek transparansi saat drag */
+    transform: scale(1.05); /* Efek zoom kecil saat drag */
 }
 
 .piece.correct {
